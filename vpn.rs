@@ -1,4 +1,4 @@
-#![allow(unused)]
+// #![allow(unused)]
 use std::process::Command;
 use std::env;
 use std::fs;
@@ -19,7 +19,7 @@ struct OpenVpn {
 
 impl OpenVpn {
     fn display_list(&self, path_country: &String) -> Result<(), Error> {
-        self.show_status();
+        self.show_status().unwrap();
         
         if !fs::metadata(path_country).is_ok() { Err(Error::NotFoundError) } else {
             let paths = fs::read_dir(path_country)
@@ -62,7 +62,7 @@ impl OpenVpn {
         
         let country = format!("{path_country}{}-free-{}.protonvpn.net.udp.ovpn", self.country, self.id);
         
-        self.show_status();
+        self.show_status().unwrap();
         
         if !fs::metadata(&country).is_ok() { 
             Err(Error::NotFoundError) 
@@ -132,7 +132,7 @@ fn main() -> Result<(), Error> {
     
     // List Avaliable Countries And Id(s)
     match lst_opt {
-        Some(v) => {
+        Some(_) => {
             app.mode = String::from("List");
             OpenVpn::display_list(&app, &path_countries)
         },
