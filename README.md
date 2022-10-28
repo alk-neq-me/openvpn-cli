@@ -14,7 +14,7 @@ rustc vpn.rs && ./vpn
 # with custom mode
 # Options
 # -c <country_name>
-# -i <country_noumber>
+# -i <country_number>
 rustc vpn.rs && ./vpn -c jp -i 1
 ```
 
@@ -29,12 +29,12 @@ rustc vpn.rs && ./vpn --list
 
 ## Usage - Avaliable only with Python 🐍
 
-### Customer Mode
+### Custom Mode
 ```sh
 # with custom mode
 # Options
 # -c <country_name>
-# -i <country_noumber>
+# -i <country_number>
 python vpn.py -c jp -i 1
 ```
 
