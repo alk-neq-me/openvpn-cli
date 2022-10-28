@@ -1,0 +1,52 @@
+# Open VPN Project
+
+
+## Usage - Avaliable only with Rust 🦀
+
+### Fast Mode
+```sh
+# with fast mode
+rustc vpn.rs && ./vpn
+```
+
+### Custom Mode
+```sh
+# with custom mode
+# Options
+# -c <country_name>
+# -i <country_noumber>
+rustc vpn.rs && ./vpn -c jp -i 1
+```
+
+### List Mode
+```sh
+# with list mode
+# show avaliable countries and their noumbers
+rustc vpn.rs && ./vpn --list
+```
+
+---
+
+## Usage - Avaliable only with Python 🐍
+
+### Customer Mode
+```sh
+# with custom mode
+# Options
+# -c <country_name>
+# -i <country_noumber>
+python vpn.py -c jp -i 1
+```
+
+### Optional Mode
+```sh
+# with optional mode
+python vpn.py
+```
+
+### List Mode
+```sh
+# with list mode
+# show avaliable countries and their noumbers
+python vpn.py --list
+```
