@@ -29,7 +29,7 @@ rustc vpn.rs && ./vpn --list
 
 ## Usage - Avaliable only with Python 🐍
 
-### Customer Mode
+### Custom Mode
 ```sh
 # with custom mode
 # Options
