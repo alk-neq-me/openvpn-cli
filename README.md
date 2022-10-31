@@ -21,7 +21,7 @@ rustc vpn.rs && ./vpn -c jp -i 1
 ### List Mode
 ```sh
 # with list mode
-# show avaliable countries and their noumbers
+# show avaliable countries and their numbers
 rustc vpn.rs && ./vpn --list
 ```
 
@@ -47,6 +47,6 @@ python vpn.py
 ### List Mode
 ```sh
 # with list mode
-# show avaliable countries and their noumbers
+# show avaliable countries and their numbers
 python vpn.py --list
 ```
